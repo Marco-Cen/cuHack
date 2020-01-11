@@ -20,7 +20,7 @@ def index():
 
 @app.route('/report')
 def home():
-	return redirect(url_for('/'))
+	return index()
 
 @app.route('/display')
 def about():
@@ -28,7 +28,7 @@ def about():
 
 @app.errorhandler(404)
 def handle(error):
-	return render_template('handler.html', title='404 Error')
+	return render_template('error.html', title='404 Error')
 	
 if __name__ == "__main__":
 	app.run(debug=True)
