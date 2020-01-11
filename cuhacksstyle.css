@@ -21,12 +21,72 @@ body, html{
     background-size: cover;
 }
 
-/* GeoMap */
+/* GeoMap: Discover More Text */
 .GeoMap{
     margin: 0;
     padding: 0;
-/*    background: url(bg.jpg);
-    background-size: cover;
-*/
+    font-family: sans-serif;
+    color: #fff;
 }
 
+/* Discover More Animation */
+h1
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: linear-gradient(rgba(255,255,255,1) 20%, transparent 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+}
+h1:hover
+{
+    letter-spacing: 18px;
+}
+
+/* GeoMap */
+h2
+{
+    position: absolute;
+    top: 0%;
+    left: 38%;
+    font-size: 5em;
+    font-weight: lighter;
+    letter-spacing: 10px;
+}
+
+/* Search Bar annimation and style */
+.Search{
+    position: relative;
+    top: 15%;
+    left: 43%;
+}
+
+input[type=text] {
+    width: 200px;
+    -webkit-transition: width 0.4s ease-in-out;
+    transition: width 0.4s ease-in-out;
+  }
+  
+  /* Change size of text box when clicked on */
+  input[type=text]:focus {
+    width: 50%;
+  }
+
+
+/* Parallax scroll */
+.parallax2{
+    background-image: url("assets/bkg2.jpeg");
+    height: 200%;
+
+    /* Scrolling effect for 2st bkg */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
