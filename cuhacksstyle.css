@@ -74,13 +74,18 @@ h2
 .Search{
     position: absolute;
     top: 35%;
-    left: 43%;
+    left: 43%; 
 }
 
 input[type=text] {
-    width: 200px;
+    width: 500px;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
+    border-radius: 25px;
+    border: 2px;
+    padding: 20px; 
+    width: 300px;
+    height: 10px;  
   }
   
   /* Change size of text box when clicked on */
