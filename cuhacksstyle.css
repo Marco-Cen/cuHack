@@ -9,12 +9,11 @@ body, html{
     overflow-x: hidden;
 }
 
-/* Parallax scroll */
-.parallax{
+/* BKG picture */
+.bkg{
     background-image: url("assets/bkg.png");
-    height: 200%;
+    height: 100%;
 
-    /* Scrolling effect for 1st bkg */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -60,10 +59,21 @@ h2
     letter-spacing: 10px;
 }
 
+/* Search icon */
+
+.searchion {
+    background-image: url("assets/searchicon.png");
+    height: 100%;
+
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
 /* Search Bar annimation and style */
 .Search{
-    position: relative;
-    top: 15%;
+    position: absolute;
+    top: 35%;
     left: 43%;
 }
 
@@ -75,18 +85,5 @@ input[type=text] {
   
   /* Change size of text box when clicked on */
   input[type=text]:focus {
-    width: 50%;
+    width: 200%;
   }
-
-
-/* Parallax scroll */
-.parallax2{
-    background-image: url("assets/bkg2.jpeg");
-    height: 200%;
-
-    /* Scrolling effect for 2st bkg */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
