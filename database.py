@@ -36,7 +36,7 @@ class database:
 				#insert into the reports table data that coresponds to the columns of originization, location, 
 				#descirption, image coresponding to the report and the status of the report (most likely by default
 				#'reported') 
-				s = f"INSERT INTO reports (organization, location, description, image, status) VALUES (\'{organization}\', \'{description}\', \'{location}\', \'{img}\', \'{status}\');"
+				s = f"INSERT INTO reports (organization, location, description, image, status) VALUES (\'{organization}\', \'{location}\', \'{description}\', \'{img}\', \'{status}\');"
 				#execute the string mysql syntatical request to the database/table in order to add the report data to the
 				#server so that it can be requested by the user-application later on for map-population, etc.
 				cursor.execute(s)
