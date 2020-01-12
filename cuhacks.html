@@ -5,25 +5,37 @@
     <title>GeoMap</title>     <!-- Name in tab -->
     <link rel="stylesheet" type ="text/css" href="cuhacksstyle.css"> <!-- To reference css file -->
         <!-- Default font is sans-serif unless use specific font below-->
-    <!-- <link href="https://fonts.googleapis.com/css?family=SansSerif&display=swap" rel="stylesheet"> 
+    <!-- <link href="https://fonts.googleapis.com/css?family=SansSerif&display=swap" rel="stylesheet"> -->
+    <!-- <script scr = "cuhackhjs.js">  </script> -->
     </head>
 
     <!-- Bkg IMG and TEXT -->
     <div class = 'bkg'>
-        <div class = 'quote'> "We aim to provide all possible maintence listings to better our cities: potholes, graffiti, litter..." - GeoStatus</div>
+        <!-- <div class = 'quote'> "We aim to provide all possible maintence listings to better our communities for free: potholes, graffiti, litter..." - GeoStatus</div> -->
+       
         <div class = 'smallText'> <i> (Only in Ottawa, Canada) </i> </div>
     </div>
 
+    
     <body>
         <!-- Company/product name/slogan -->
         <div class = 'GeoMap'>
             <h1> Tomorrow's Change </h1>
             <h2> GeoStatus </h2>
+
+             <!-- Arrow Animation -->
+            <div class="container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+
         </div>
 
 
+
         <!-- User input Box  -->
-        <div class="container">
+        <div class="userContainer">
             <form action="action_page.php">
                 <!-- Street Address -->    
                 <div class="row">
@@ -57,25 +69,24 @@
                 <!-- Description -->
                 <div class="row">
                     <div class="col-25">
-                        <label for="subject"> Subject \n Description </label>
+                        <label for="Descrip"> Description: </label>
                     </div>
                     <div class="col-75">
-                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                        <textarea id="Descrip" name="Description" placeholder= "What's the problem? Provide a detailed description." style="height:200px"></textarea>
                     </div>
                 </div>
+                <!-- Submit Button -->
                 <div class="row">
-                 <input type="submit" value="Submit">
+                 <input type="submit" value="Submit" style= "position: relative; right: 69.5%;">
                 </div>
             </form>
         </div>
 
+        <div class = "about"> 
 
-
+            
+        </div>
 
     </body>
-
-
-
-
 
 </html>
