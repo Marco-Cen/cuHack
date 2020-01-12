@@ -1,5 +1,4 @@
 /* To do:
-- Readme:user reports, stored in our system, we sent email to insititutions 
 - 
 
 */
@@ -201,6 +200,7 @@ input[type=text], select, textarea{
     background-color: #f2f2f2;
     padding: 20px;
     position: relative;
+    overflow-x: hidden; /* Removes random white strip of white space at bottom of page */
   }
   
   /* Floating column for labels: 25% width */
