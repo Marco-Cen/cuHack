@@ -43,4 +43,4 @@ def handle(error):
 #we only want to run this server from this file, only during the build-phase should we have
 #debugging turned on which will automaticly update the page on commit
 if __name__ == "__main__":
-	app.run(debug=True)
+	app.run(debug=False, host='0.0.0.0')
