@@ -18,7 +18,7 @@
   }
 
   body, html{
-    font-family: Hind Siliguri; /* Font */
+    font-family: sans-serif; /* Font */
     color: white;
     height: 100%; /* Full Height */
     width: 100%; /* Full size */
@@ -27,7 +27,7 @@
 h2 {
     position: absolute;
     top: 20%;
-    left: 29%;
+    left: 18%;
     font-size: 30px;
     font-weight: lighter;
     letter-spacing: 10px;
