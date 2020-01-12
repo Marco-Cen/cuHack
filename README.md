@@ -1,7 +1,7 @@
 Carleton University Hackathon
 January 11-12th 2020
 
-Team Members: Marco Cen, Taj Loodu, Gaberiel Cordovado
+Team Members: Marco Cen, Taj Loodu, Gabriel Cordovado
 
 ================================================ 
 
