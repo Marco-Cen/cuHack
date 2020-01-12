@@ -1,0 +1,117 @@
+<!-- uCarleton Hackathon Jan 11-12 2020 (24Hour Challenge) -->
+<!DOCTYPE html> 
+
+<html>
+    <head>
+    <title>GeoStatus</title>     <!-- Name in tab -->
+    <link rel="stylesheet" type ="text/css" href="{{ url_for('static', filename='cuhacksstyle.css') }}"> <!-- To reference css file -->
+        <!-- Default font is sans-serif unless use specific font below-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=Raleway&display=swap" rel="stylesheet"> -->
+    <!-- <script scr = "cuhackhjs.js">  </script> -->
+    <title>{{ title }}</title>
+    </head>
+
+    <!-- Bkg IMG and TEXT -->
+    <div class = 'bkg'>
+        <!-- <div class = 'quote'> "We aim to provide all possible maintence listings to better our communities for free: potholes, graffiti, litter..." - GeoStatus</div> -->
+    </div>
+
+    
+    <body>
+        <!-- Company/product name/slogan -->
+        <div class = 'GeoMap'>
+            <h1> Tomorrow's Change </h1>
+            <h2> GeoStatus </h2>
+
+             <!-- Arrow Animation -->
+            <div class="container">
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+                <div class="chevron"></div>
+            </div>
+
+        </div>
+
+
+
+        <!-- Second half of page  -->
+        <div class="userContainer">
+
+            <!-- Click to open: ABOUT US! -->
+            <div class = "about">
+                <input type= "checkbox" id="toggle">
+
+                <div class = "clickButton">
+                    <label for= "toggle"> CLICK ME </label>
+                </div>
+
+                <dialog>
+                    <h3> ABOUT US! </h3>
+                    <p> GeoStatus is a web-application to record and monitor infrastructure issues reported by the general public. Using our specially designed software, reports are recorded
+                        into a database and pinned on a map accessible to all web users. As a result, residents will stay informed whether the problem they are facing has already been addressed 
+                        by another client and the status of the repair, allowing residents to feel valued and play a greater role in making their city great. 
+                    </p>
+                    <label for= "toggle"> CLOSE </label>
+                </dialog>
+            </div>
+
+            <div class = 'smallText'> <i> (Currently Only Available for Ottawa, Canada) </i> </div>
+
+             <!-- User input Box  -->
+            <form action="action_page.php" method="post">
+                <!--  Orginization  -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="organization"> Organization: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="org" name="Organization" placeholder="The organization reported to...">
+                    </div>
+                </div>
+                <!-- Street Address -->    
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address"> Street Address: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="Street Address" placeholder="Incident Street Address...">
+                    </div>
+                </div>
+                <!-- Postal Code -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pCode"> Postal Code: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type= "text" id="pCode" name="PostalCode" placeholder="Incident Postal Code...">
+                    </div>
+                </div>
+                <!-- Country -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country"> Country: </label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="Descrip"> Description: </label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="Descrip" name="Description" placeholder= "What's the problem? Provide a detailed description if possible." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <!-- Submit Button, when pressed brings to next page -->
+                <input type="submit" value="Submit" style= "position: relative; right: 69.5%;" href= "pagetwo.html">
+            </form>
+
+        </div>
+
+    </body>
+
+</html>

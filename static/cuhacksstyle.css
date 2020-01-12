@@ -1,0 +1,287 @@
+/* To do:
+- 
+
+*/
+
+body, html{
+    font-family: sans-serif; /* Font */
+
+    height: 100%; /* Full Height */
+    width: 100%; /* Full size */
+
+    margin: 0px; /* Space outside of something */
+    padding: 0px;  /* Space inside something */
+    overflow-x: hidden;
+}
+
+/* BKG picture */
+.bkg{
+    background-image: url("assets/bkg.png");
+    height: 100%;
+
+
+    background-size: cover; /* to make sure image is full image */
+
+    text-align: center;
+}
+
+/* .quote{
+    position: relative;
+    top: 50%;
+
+} */
+
+
+
+.smallText{
+    /* Small text at bottom right (Only in Ottawa, Canada.) */
+    position: relative;
+    top: 100.5%;
+    right: 0%;
+    font-size: 0.6em;
+    font-weight: lighter;
+}
+
+/* GeoMap text and subtext Text */
+.GeoMap{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Company slogan Animation */
+h1
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: linear-gradient(rgba(255,255,255,1) 20%, transparent 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+}
+h1:hover
+{
+    letter-spacing: 18px;
+}
+
+/* Arrow Animation */
+.container {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 49%;
+    top: 30%;
+  }
+  
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+
+
+/* GeoMap */
+h2
+{
+    position: absolute;
+    top: 0%;
+    left: 34%;
+    font-size: 5em;
+    font-weight: lighter;
+    letter-spacing: 10px;
+}
+
+
+/* User Input Box Style */
+/* Inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Label displayed next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Submit button */
+  input[type=submit] {
+    background-color: rgb(97, 45, 238);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* The User input box container */
+  .userContainer {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    position: relative;
+    overflow-x: hidden; /* Removes random white strip of white space at bottom of page */
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}
+
+
+/* ABOUT US Click pop up button */
+.about{
+    position: absolute;
+    /* font-family: monospace;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    width: 100%; */
+}  
+
+.clickButton{
+    position: relative;
+    display: inline-block;
+    left: 44.5%;
+}
+
+#toggle{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    z-index: -1;
+    }
+    
+    #toggle:checked ~ dialog {
+    display: block;
+    }
+    
+    label{
+    background: skyblue;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 4px;
+    }
+    @keyframes appear {
+        0%{
+            opacity: 0;
+            /* transform: translateY(100px);  */
+        }
+    }
+    
+    dialog{
+    animation: appear 350ms ease-in 1;
+    max-width: 500px;
+    position: relative;
+    left: 0%;
+    }
+}
