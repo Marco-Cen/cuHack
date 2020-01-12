@@ -184,14 +184,15 @@ input[type=text], select, textarea{
   }
   
   /* Submit button */
-  input[type=submit] {
-    background-color: rgb(97, 45, 238);
-    color: white;
-    padding: 12px 20px;
+  .submit {
+    background-color: plum;
+    padding: 3px 3px;
     border: none;
     border-radius: 4px;
     cursor: pointer;
     float: right;
+    position: relative;
+    left: -70.5%;
   }
   
   /* The User input box container */
