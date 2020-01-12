@@ -1,0 +1,147 @@
+/* To do:
+- Readme:user reports, stored in our system, we sent email to insititutions 
+- 
+
+*/
+
+body, html{
+    font-family: sans-serif; /* Font */
+
+    height: 100%; /* Full Height */
+    width: 100%; /* Full size */
+
+    margin: 0px; /* Space outside of something */
+    padding: 0px;  /* Space inside something */
+    overflow-x: hidden;
+}
+
+/* BKG picture */
+.bkg{
+    background-image: url("assets/bkg.png");
+    height: 100%;
+
+    display: block;
+    background-attachment: fixed;
+    background-size: cover; /* to make sure image is full image */
+
+    text-align: center;
+}
+
+.quote{
+    /* Company quote at landing page */
+    position: relative;
+    top: 50%;
+}
+
+
+.smallText{
+    /* Small text at bottom right (Only in Ottawa, Canada.) */
+    position: relative;
+    top: 98.3%;
+    right: 0%;
+    font-size: 0.8em;
+}
+
+/* GeoMap: Discover More Text */
+.GeoMap{
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+/* Discover More Animation */
+h1
+{
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 2em;
+    text-transform: uppercase;
+    transition: 0.5s;
+    background: linear-gradient(rgba(255,255,255,1) 20%, transparent 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-weight: lighter;
+}
+h1:hover
+{
+    letter-spacing: 18px;
+}
+
+/* GeoMap */
+h2
+{
+    position: absolute;
+    top: 0%;
+    left: 34%;
+    font-size: 5em;
+    font-weight: lighter;
+    letter-spacing: 10px;
+}
+
+
+/* User Input Box Style */
+/* Inputs, select elements and textareas */
+input[type=text], select, textarea{
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: vertical;
+  }
+  
+  /* Label displayed next to the inputs */
+  label {
+    padding: 12px 12px 12px 0;
+    display: inline-block;
+  }
+  
+  /* Submit button */
+  input[type=submit] {
+    background-color: rgb(97, 45, 238);
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    float: right;
+  }
+  
+  /* The container */
+  .container {
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+  }
+  
+  /* Floating column for labels: 25% width */
+  .col-25 {
+    float: left;
+    width: 25%;
+    margin-top: 6px;
+  }
+  
+  /* Floating column for inputs: 75% width */
+  .col-75 {
+    float: left;
+    width: 75%;
+    margin-top: 6px;
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .col-25, .col-75, input[type=submit] {
+      width: 100%;
+      margin-top: 0;
+    }
+  }
+}

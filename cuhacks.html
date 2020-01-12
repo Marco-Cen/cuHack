@@ -1,20 +1,78 @@
 <!DOCTYPE html> 
 
 <html>
-    <!-- Name of Company/Service -->
-    <title>GeoMap</title>
+    <head>
+    <title>GeoMap</title>     <!-- Name in tab -->
+    <link rel="stylesheet" type ="text/css" href="cuhacksstyle.css"> <!-- To reference css file -->
+        <!-- Default font is sans-serif unless use specific font below-->
+    <!-- <link href="https://fonts.googleapis.com/css?family=SansSerif&display=swap" rel="stylesheet"> 
+    </head>
+
+    <!-- Bkg IMG and TEXT -->
+    <div class = 'bkg'>
+        <div class = 'quote'> "We aim to provide all possible maintence listings to better our cities: potholes, graffiti, litter..." - GeoStatus</div>
+        <div class = 'smallText'> <i> (Only in Ottawa, Canada) </i> </div>
+    </div>
 
     <body>
-       <!-- Parallax Scroll (1st Pic)-->
-        <div class = 
+        <!-- Company/product name/slogan -->
+        <div class = 'GeoMap'>
+            <h1> Tomorrow's Change </h1>
+            <h2> GeoStatus </h2>
+        </div>
+
+
+        <!-- User input Box  -->
+        <div class="container">
+            <form action="action_page.php">
+                <!-- Street Address -->    
+                <div class="row">
+                    <div class="col-25">
+                        <label for="address"> Street Address: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type="text" id="address" name="Street Address" placeholder="Your Street Address...">
+                    </div>
+                </div>
+                <!-- Postal Code -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="pCode"> Postal Code: </label>
+                    </div>
+                    <div class="col-75">
+                        <input type= "text" id="pCode" name="PostalCode" placeholder="Your Postal Code...">
+                    </div>
+                </div>
+                <!-- Country -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="country"> Country: </label>
+                    </div>
+                    <div class="col-75">
+                        <select id="country" name="country">
+                        <option value="canada">Canada</option>
+                        </select>
+                    </div>
+                </div>
+                <!-- Description -->
+                <div class="row">
+                    <div class="col-25">
+                        <label for="subject"> Subject \n Description </label>
+                    </div>
+                    <div class="col-75">
+                        <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                 <input type="submit" value="Submit">
+                </div>
+            </form>
+        </div>
+
 
 
 
     </body>
-
-
-
-
 
 
 
