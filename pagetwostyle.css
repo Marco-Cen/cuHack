@@ -1,0 +1,10 @@
+.bkg{
+    background-image: url("assets/bkg.png");
+    height: 100%;
+
+    display: block;
+    background-attachment: fixed;
+    background-size: cover; /* to make sure image is full image */
+
+    text-align: center;
+}
