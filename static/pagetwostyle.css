@@ -1,0 +1,43 @@
+.bkg{
+    background-image: url("assets/bkg.png");
+    height: 100%;
+
+    display: block;
+    background-attachment: fixed;
+    background-size: cover; /* to make sure image is full image */
+    text-align: center;
+    filter: blur(3px);
+    -webkit-filter: blur(3px);
+}
+
+.centered {
+    position: absolute;
+    top: 25%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  body, html{
+    font-family: sans-serif; /* Font */
+    color: white;
+    height: 100%; /* Full Height */
+    width: 100%; /* Full size */
+}
+
+h2 {
+    position: absolute;
+    top: 20%;
+    left: 18%;
+    font-size: 30px;
+    font-weight: lighter;
+    letter-spacing: 10px;
+}
+
+h1 {
+    position: absolute;
+    top: 0%;
+    left: 34%;
+    font-size: 88px;
+    font-weight: lighter;
+    letter-spacing: 10px;
+}
