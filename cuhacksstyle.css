@@ -1,5 +1,4 @@
 /* To do:
-- Readme:user reports, stored in our system, we sent email to insititutions 
 - 
 
 */
@@ -20,36 +19,37 @@ body, html{
     background-image: url("assets/bkg.png");
     height: 100%;
 
-    display: block;
-    background-attachment: fixed;
+
     background-size: cover; /* to make sure image is full image */
 
     text-align: center;
 }
 
-.quote{
-    /* Company quote at landing page */
+/* .quote{
     position: relative;
     top: 50%;
-}
+
+} */
+
 
 
 .smallText{
     /* Small text at bottom right (Only in Ottawa, Canada.) */
     position: relative;
-    top: 98.3%;
+    top: 100.5%;
     right: 0%;
-    font-size: 0.8em;
+    font-size: 0.6em;
+    font-weight: lighter;
 }
 
-/* GeoMap: Discover More Text */
+/* GeoMap text and subtext Text */
 .GeoMap{
     margin: 0;
     padding: 0;
     color: #fff;
 }
 
-/* Discover More Animation */
+/* Company slogan Animation */
 h1
 {
     position: absolute;
@@ -68,6 +68,91 @@ h1:hover
 {
     letter-spacing: 18px;
 }
+
+/* Arrow Animation */
+.container {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    left: 49%;
+    top: 30%;
+  }
+  
+  .chevron {
+    position: absolute;
+    width: 28px;
+    height: 8px;
+    opacity: 0;
+    transform: scale3d(0.5, 0.5, 0.5);
+    animation: move 3s ease-out infinite;
+  }
+  
+  .chevron:first-child {
+    animation: move 3s ease-out 1s infinite;
+  }
+  
+  .chevron:nth-child(2) {
+    animation: move 3s ease-out 2s infinite;
+  }
+  
+  .chevron:before,
+  .chevron:after {
+    content: ' ';
+    position: absolute;
+    top: 0;
+    height: 100%;
+    width: 51%;
+    background: #fff;
+  }
+  
+  .chevron:before {
+    left: 0;
+    transform: skew(0deg, 30deg);
+  }
+  
+  .chevron:after {
+    right: 0;
+    width: 50%;
+    transform: skew(0deg, -30deg);
+  }
+  
+  @keyframes move {
+    25% {
+      opacity: 1;
+  
+    }
+    33% {
+      opacity: 1;
+      transform: translateY(30px);
+    }
+    67% {
+      opacity: 1;
+      transform: translateY(40px);
+    }
+    100% {
+      opacity: 0;
+      transform: translateY(55px) scale3d(0.5, 0.5, 0.5);
+    }
+  }
+  
+  .text {
+    display: block;
+    margin-top: 75px;
+    margin-left: -30px;
+    font-size: 12px;
+    color: #fff;
+    text-transform: uppercase;
+    white-space: nowrap;
+    opacity: .25;
+    animation: pulse 2s linear alternate infinite;
+  }
+  
+  @keyframes pulse {
+    to {
+      opacity: 1;
+    }
+  }
+
 
 /* GeoMap */
 h2
@@ -109,11 +194,13 @@ input[type=text], select, textarea{
     float: right;
   }
   
-  /* The container */
-  .container {
+  /* The User input box container */
+  .userContainer {
     border-radius: 5px;
     background-color: #f2f2f2;
     padding: 20px;
+    position: relative;
+    overflow-x: hidden; /* Removes random white strip of white space at bottom of page */
   }
   
   /* Floating column for labels: 25% width */
@@ -144,4 +231,57 @@ input[type=text], select, textarea{
       margin-top: 0;
     }
   }
+}
+
+
+/* ABOUT US Click pop up button */
+.about{
+    position: absolute;
+    /* font-family: monospace;
+    font-size: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin:0;
+    padding: 0;
+    width: 100%; */
+}  
+
+.clickButton{
+    position: relative;
+    display: inline-block;
+    left: 44.5%;
+}
+
+#toggle{
+    visibility: hidden;
+    opacity: 0;
+    position: relative;
+    z-index: -1;
+    }
+    
+    #toggle:checked ~ dialog {
+    display: block;
+    }
+    
+    label{
+    background: skyblue;
+    color: white;
+    padding: .5em 1em;
+    border-radius: 4px;
+    }
+    @keyframes appear {
+        0%{
+            opacity: 0;
+            /* transform: translateY(100px);  */
+        }
+    }
+    
+    dialog{
+    animation: appear 350ms ease-in 1;
+    max-width: 500px;
+    position: relative;
+    left: 0%;
+    }
 }
