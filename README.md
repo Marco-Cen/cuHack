@@ -1,5 +1,9 @@
-Carleton University Hackathon January 11-12 2020
-================================================ (Marco Cen, Taj Loodu, Gaberiel Cordovado)
+Carleton University Hackathon
+January 11-12th 2020
+
+Team Members: Marco Cen, Taj Loodu, Gaberiel Cordovado
+
+================================================ 
 
 Service: GeoStatus
 
