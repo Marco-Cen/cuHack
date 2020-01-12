@@ -1,8 +1,9 @@
 def GenericData():
 	pass
 
-def ColourScheme():
-	colours = [
-		
-	]
-	return colours
+def OrganizationEmails():
+	emails = {
+		'City of Ottawa':'311@ottawa.ca'
+		'Demo Orginization': 'gabecofficial@gmail.com'
+	}
+	return emails
