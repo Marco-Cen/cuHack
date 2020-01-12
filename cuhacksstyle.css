@@ -59,17 +59,6 @@ h2
     letter-spacing: 10px;
 }
 
-/* Search icon */
-
-.searchion {
-    background-image: url("assets/searchicon.png");
-    height: 100%;
-
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-}
-
 /* Search Bar annimation and style */
 .Search{
     position: absolute;
@@ -78,13 +67,12 @@ h2
 }
 
 input[type=text] {
-    width: 500px;
+    width: 100%;
     -webkit-transition: width 0.4s ease-in-out;
     transition: width 0.4s ease-in-out;
     border-radius: 25px;
     border: 2px;
     padding: 20px; 
-    width: 300px;
     height: 10px;  
   }
   
